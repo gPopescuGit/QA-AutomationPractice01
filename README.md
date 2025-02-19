@@ -16,4 +16,4 @@ In order to run the test suite:
 cd repoLocation //set location to the repository  
 mvn test -DsuiteXmlFile=testSuites/Master-suite.xml //run Master-suite  
 start "" "reports/index.html" //view report in browser  
-![FailedTest screenshot](reports/takeScreenShotOfFailedTest.png)
+![FailedTest screenshot](reports/loginLockedUser.png)
