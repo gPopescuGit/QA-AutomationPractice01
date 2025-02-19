@@ -12,8 +12,12 @@ The tests were grouped into two suites:
 -> SubmitOrderTests  
 A Master-suite.xml was also added to run both suites with one command  
   
-In order to run the test suite:  
-cd repoLocation //set location to the repository  
+!In order to run the project, the following are required:  
+-Install Java (JDK 11 or Later)  
+-Install Maven  
+  
+Commands to run the project
+cd repoLocation //set location to the downloaded files  
 mvn test -DsuiteXmlFile=testSuites/Master-suite.xml //run Master-suite  
 start "" "reports/index.html" //view report in browser  
 ![FailedTest screenshot](reports/loginLockedUser.png)
