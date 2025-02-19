@@ -1,0 +1,23 @@
+[
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"fName" : "",
+		"lName" : "",
+		"postalCode" : ""
+	},
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"fName" : "firstName",
+		"lName" : "",
+		"postalCode" : ""
+	},
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"fName" : "firstName",
+		"lName" : "lastName",
+		"postalCode" : ""
+	}
+]

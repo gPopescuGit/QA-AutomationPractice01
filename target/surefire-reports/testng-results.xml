@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-19T15:43:42 EET" name="Suite" finished-at="2025-02-19T15:43:58 EET" duration-ms="16561">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" name="submitMultipleOrders" class="tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" name="submitOrder" class="tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-02-19T15:43:42 EET" name="Test" finished-at="2025-02-19T15:43:58 EET" duration-ms="16561">
+      <class name="tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:42 EET" name="launchApplication" finished-at="2025-02-19T15:43:43 EET" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:43 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:43:44 EET" duration-ms="1321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:44 EET" name="tearDown" finished-at="2025-02-19T15:43:45 EET" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:45 EET" name="launchApplication" finished-at="2025-02-19T15:43:46 EET" duration-ms="1071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:46 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:43:47 EET" duration-ms="1322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:47 EET" name="tearDown" finished-at="2025-02-19T15:43:48 EET" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:48 EET" name="launchApplication" finished-at="2025-02-19T15:43:49 EET" duration-ms="1114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:49 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:43:50 EET" duration-ms="1287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:50 EET" name="tearDown" finished-at="2025-02-19T15:43:51 EET" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:51 EET" name="launchApplication" finished-at="2025-02-19T15:43:52 EET" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:52 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:43:53 EET" duration-ms="786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:53 EET" name="tearDown" finished-at="2025-02-19T15:43:53 EET" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:53 EET" name="launchApplication" finished-at="2025-02-19T15:43:54 EET" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:54 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:43:55 EET" duration-ms="793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:55 EET" name="tearDown" finished-at="2025-02-19T15:43:56 EET" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:56 EET" name="launchApplication" finished-at="2025-02-19T15:43:57 EET" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:57 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:43:58 EET" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@4470fbd6]" started-at="2025-02-19T15:43:58 EET" name="tearDown" finished-at="2025-02-19T15:43:58 EET" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SubmitOrderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite started-at="2025-02-19T15:43:28 EET" name="ErrorValidationSuite" finished-at="2025-02-19T15:43:41 EET" duration-ms="13033">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" name="fillWrongCheckoutPageInfo" class="tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.loginLockedUser(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" name="loginLockedUser" class="tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.loginWrongCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" name="loginWrongCredentials" class="tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.takeScreenShotOfFailedTest()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" name="takeScreenShotOfFailedTest" class="tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2025-02-19T15:43:28 EET" name="WrongCredentialsErrorValidation" finished-at="2025-02-19T15:43:41 EET" duration-ms="13033">
+      <class name="tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:29 EET" name="launchApplication" finished-at="2025-02-19T15:43:30 EET" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:30 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:43:31 EET" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=, fName=, pass=secret_sauce, email=standard_user, postalCode=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillWrongCheckoutPageInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:31 EET" name="tearDown" finished-at="2025-02-19T15:43:31 EET" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:31 EET" name="launchApplication" finished-at="2025-02-19T15:43:32 EET" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:32 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:43:33 EET" duration-ms="533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillWrongCheckoutPageInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:33 EET" name="tearDown" finished-at="2025-02-19T15:43:33 EET" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:33 EET" name="launchApplication" finished-at="2025-02-19T15:43:35 EET" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:35 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:43:35 EET" duration-ms="546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lName=lastName, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillWrongCheckoutPageInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:35 EET" name="tearDown" finished-at="2025-02-19T15:43:36 EET" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:36 EET" name="launchApplication" finished-at="2025-02-19T15:43:37 EET" duration-ms="1093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginLockedUser(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:37 EET" name="loginLockedUser" finished-at="2025-02-19T15:43:37 EET" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLockedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:37 EET" name="tearDown" finished-at="2025-02-19T15:43:38 EET" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:38 EET" name="launchApplication" finished-at="2025-02-19T15:43:39 EET" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginWrongCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:39 EET" name="loginWrongCredentials" finished-at="2025-02-19T15:43:39 EET" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fooEmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fooPass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:39 EET" name="tearDown" finished-at="2025-02-19T15:43:40 EET" duration-ms="577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:40 EET" name="launchApplication" finished-at="2025-02-19T15:43:41 EET" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="takeScreenShotOfFailedTest()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:41 EET" name="takeScreenShotOfFailedTest" finished-at="2025-02-19T15:43:41 EET" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Intentionally failing this test to showcase screenshot feature.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Intentionally failing this test to showcase screenshot feature.
+at org.testng.Assert.fail(Assert.java:111)
+at tests.ErrorValidationTest.takeScreenShotOfFailedTest(ErrorValidationTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOfFailedTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@5e7cd6cc]" started-at="2025-02-19T15:43:41 EET" name="tearDown" finished-at="2025-02-19T15:43:41 EET" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ErrorValidationTest -->
+    </test> <!-- WrongCredentialsErrorValidation -->
+  </suite> <!-- ErrorValidationSuite -->
+  <suite started-at="2025-02-19T15:43:58 EET" name="MasterSuite" finished-at="2025-02-19T15:43:58 EET" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- MasterSuite -->
+</testng-results>
