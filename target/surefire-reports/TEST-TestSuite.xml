@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="30.336" tests="12" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="30.343" tests="12" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\ALTEX\.cache\selenium\chromedriver\win64\133.0.6943.126\chromedriver.exe"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RO"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\ALTEX\AppData\Local\Temp\surefire7494153680905974196\surefirebooter-20250219154328253_3.jar C:\Users\ALTEX\AppData\Local\Temp\surefire7494153680905974196 2025-02-19T15-43-28_156-jvmRun1 surefire-20250219154328253_1tmp surefire_0-20250219154328253_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ALTEX\AppData\Local\Temp\surefire5663100124283013947\surefirebooter-20250224171951618_3.jar C:\Users\ALTEX\AppData\Local\Temp\surefire5663100124283013947 2025-02-24T17-19-51_523-jvmRun1 surefire-20250224171951618_1tmp surefire_0-20250224171951618_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ALTEX\eclipse-workspace\AutomationPractice\target\test-classes;C:\Users\ALTEX\eclipse-workspace\AutomationPractice\target\classes;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-java\4.28.1\selenium-java-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-api\4.28.1\selenium-api-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.28.1\selenium-chrome-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.28.1\selenium-chromium-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-json\4.28.1\selenium-json-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.28.1\selenium-manager-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.28.1\selenium-devtools-v130-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.28.1\selenium-devtools-v131-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.28.1\selenium-devtools-v132-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.28.1\selenium-devtools-v85-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.28.1\selenium-edge-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.28.1\selenium-firefox-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-http\4.28.1\selenium-http-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.28.1\selenium-ie-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.28.1\selenium-remote-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\ALTEX\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ALTEX\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ALTEX\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ALTEX\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\ALTEX\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\ALTEX\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\ALTEX\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\ALTEX\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-os\4.28.1\selenium-os-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.28.1\selenium-safari-driver-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\seleniumhq\selenium\selenium-support\4.28.1\selenium-support-4.28.1.jar;C:\Users\ALTEX\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\ALTEX\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ALTEX\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ALTEX\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ALTEX\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\ALTEX\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\ALTEX\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ALTEX\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\ALTEX\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\ALTEX\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ALTEX\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\ALTEX\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\ALTEX\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\ALTEX\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\ALTEX\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ALTEX\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ALTEX\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ALTEX\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ALTEX\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\ALTEX\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\ALTEX\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ALTEX\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ALTEX\.m2\repository\org\apache\commons\commons-lang3\3.15.0\commons-lang3-3.15.0.jar;C:\Users\ALTEX\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\ALTEX\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\ALTEX\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\ALTEX\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ALTEX\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ALTEX\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ALTEX\AppData\Local\Temp\surefire7494153680905974196\surefirebooter-20250219154328253_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ALTEX\AppData\Local\Temp\surefire5663100124283013947\surefirebooter-20250224171951618_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="fillWrongCheckoutPageInfo[{lName=, fName=, pass=secret_sauce, email=standard_user, postalCode=}](1)" classname="tests.ErrorValidationTest" time="0.547">
+  <testcase name="fillWrongCheckoutPageInfo[{lName=, fName=, pass=secret_sauce, email=standard_user, postalCode=}](1)" classname="tests.ErrorValidationTest" time="0.514">
     <system-out><![CDATA[...
 ... TestNG 7.10.2 by Cédric Beust (cedric@beust.com)
 ...
@@ -69,31 +69,50 @@
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-feb. 19, 2025 3:43:30 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+feb. 24, 2025 5:19:53 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="fillWrongCheckoutPageInfo[{lName=, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}](2)" classname="tests.ErrorValidationTest" time="0.533">
-    <system-err><![CDATA[feb. 19, 2025 3:43:32 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="fillWrongCheckoutPageInfo[{lName=, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}](2)" classname="tests.ErrorValidationTest" time="0.518">
+    <system-err><![CDATA[feb. 24, 2025 5:19:55 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="fillWrongCheckoutPageInfo[{lName=lastName, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}](3)" classname="tests.ErrorValidationTest" time="0.546">
-    <system-err><![CDATA[feb. 19, 2025 3:43:34 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="fillWrongCheckoutPageInfo[{lName=lastName, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=}](3)" classname="tests.ErrorValidationTest" time="0.521">
+    <system-err><![CDATA[feb. 24, 2025 5:19:57 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="loginLockedUser[locked_out_user, secret_sauce](1)" classname="tests.ErrorValidationTest" time="0.214">
-    <system-err><![CDATA[feb. 19, 2025 3:43:36 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginLockedUser[locked_out_user, secret_sauce](1)" classname="tests.ErrorValidationTest" time="0.2">
+    <system-err><![CDATA[feb. 24, 2025 5:20:00 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="loginWrongCredentials[fooEmail, fooPass](1)" classname="tests.ErrorValidationTest" time="0.197">
-    <system-err><![CDATA[feb. 19, 2025 3:43:38 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="loginWrongCredentials[fooEmail, fooPass](1)" classname="tests.ErrorValidationTest" time="0.19">
+    <system-err><![CDATA[feb. 24, 2025 5:20:00 P.M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
+
+feb. 24, 2025 5:20:01 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="takeScreenShotOfFailedTest" classname="tests.ErrorValidationTest" time="0.134">
+  <testcase name="takeScreenShotOfFailedTest" classname="tests.ErrorValidationTest" time="0.139">
     <failure message="Intentionally failing this test to showcase screenshot feature." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Intentionally failing this test to showcase screenshot feature.
 	at org.testng.Assert.fail(Assert.java:111)
 	at tests.ErrorValidationTest.takeScreenShotOfFailedTest(ErrorValidationTest.java:64)
@@ -118,43 +137,43 @@ WARNING: Unable to find an exact match for CDP version 133, returning the closes
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
-    <system-err><![CDATA[feb. 19, 2025 3:43:40 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[feb. 24, 2025 5:20:03 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](1)" classname="tests.SubmitOrderTest" time="1.321">
+  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](1)" classname="tests.SubmitOrderTest" time="1.248">
     <system-out><![CDATA[Product Sauce Labs Bolt T-Shirt is already in cart
 ]]></system-out>
-    <system-err><![CDATA[feb. 19, 2025 3:43:42 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[feb. 24, 2025 5:20:05 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](2)" classname="tests.SubmitOrderTest" time="1.323">
+  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](2)" classname="tests.SubmitOrderTest" time="1.209">
     <system-out><![CDATA[Product Sauce Labs Bolt T-Shirt is already in cart
 ]]></system-out>
-    <system-err><![CDATA[feb. 19, 2025 3:43:45 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[feb. 24, 2025 5:20:08 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](3)" classname="tests.SubmitOrderTest" time="1.287">
+  <testcase name="submitMultipleOrders[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](3)" classname="tests.SubmitOrderTest" time="1.218">
     <system-out><![CDATA[Product Sauce Labs Bolt T-Shirt is already in cart
 ]]></system-out>
-    <system-err><![CDATA[feb. 19, 2025 3:43:48 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[feb. 24, 2025 5:20:11 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](1)" classname="tests.SubmitOrderTest" time="0.784">
-    <system-err><![CDATA[feb. 19, 2025 3:43:51 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Bolt T-Shirt, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](1)" classname="tests.SubmitOrderTest" time="0.752">
+    <system-err><![CDATA[feb. 24, 2025 5:20:14 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](2)" classname="tests.SubmitOrderTest" time="0.793">
-    <system-err><![CDATA[feb. 19, 2025 3:43:54 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Fleece Jacket, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](2)" classname="tests.SubmitOrderTest" time="0.795">
+    <system-err><![CDATA[feb. 24, 2025 5:20:16 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>
-  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](3)" classname="tests.SubmitOrderTest" time="0.754">
-    <system-err><![CDATA[feb. 19, 2025 3:43:56 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="submitOrder[{lName=lastName, product=Sauce Labs Bike Light, fName=firstName, pass=secret_sauce, email=standard_user, postalCode=192837465}](3)" classname="tests.SubmitOrderTest" time="0.733">
+    <system-err><![CDATA[feb. 24, 2025 5:20:20 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 132; Please update to a Selenium version that supports CDP version 133
 ]]></system-err>
   </testcase>

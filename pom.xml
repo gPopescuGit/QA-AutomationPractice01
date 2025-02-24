@@ -7,7 +7,7 @@
 	<groupId>testAutomationPractice</groupId>
 	<artifactId>AutomationPractice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<name>AutomationPractice</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
@@ -46,79 +46,82 @@
 			<version>5.9.2</version>
 		</dependency>
 	</dependencies>
-<profiles>
-  <profile>
-  <id>Regression</id>
-  
-  <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M6</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testSuites/Master-suite.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-      </plugins>
-       </pluginManagement>
-         </build>
-  </profile>
-  </profiles>
-	<build>
-    <pluginManagement>  <!-- Manages plugin versions but does not apply them automatically -->
-        <plugins>
-            <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.4.0</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.4.2</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-install-plugin</artifactId>
-                <version>3.1.2</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.2</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.12.1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.6.1</version>
-            </plugin>
-        </plugins>
-    </pluginManagement>
+	<profiles>
+		<profile>
+			<id>Regression</id>
 
-    <plugins>  <!-- ✅ This section applies the plugins at build time -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.3.0</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>  <!-- Allows dynamic suite execution -->
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+			<build>
+				<pluginManagement><!-- lock down plugins versions to avoid using
+					Maven defaults (may be moved to parent pom) -->
+					<plugins>
+
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testSuites/Master-suite.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
+	<build>
+		<pluginManagement>  <!-- Manages plugin versions but does not apply them
+			automatically -->
+			<plugins>
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.4.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.3.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.13.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.4.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>3.1.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>3.1.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.12.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
+					<version>3.6.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>  <!-- ✅ This section applies the plugins at build time -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>  <!-- Allows
+						dynamic suite execution -->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
