@@ -1,0 +1,27 @@
+[
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"product" : "Sauce Labs Bolt T-Shirt",
+		"fName" : "firstName",
+		"lName" : "lastName",
+		"postalCode" : "192837465"
+	},
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"product" : "Sauce Labs Fleece Jacket",
+		"fName" : "firstName",
+		"lName" : "lastName",
+		"postalCode" : "192837465"
+	},
+	{
+		"email" : "standard_user",
+		"pass" : "secret_sauce",
+		"product" : "Sauce Labs Bike Light",
+		"fName" : "firstName",
+		"lName" : "lastName",
+		"postalCode" : "192837465"
+	}
+
+]

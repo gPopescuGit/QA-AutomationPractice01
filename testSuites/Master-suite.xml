@@ -1,0 +1,6 @@
+<suite name="MasterSuite" parallel="tests" thread-count="2" verbose="10">
+    <suite-files>
+        <suite-file path="testSuites/ErrorValidationTests.xml"/>
+        <suite-file path="testSuites/SubmitOrderTests.xml"/>
+    </suite-files>
+</suite>
