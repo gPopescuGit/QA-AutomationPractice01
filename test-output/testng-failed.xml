@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [ErrorValidationSuite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <parameter name="fooPass" value="fooPass"/>
   <parameter name="fooEmail" value="fooEmail"/>
   <parameter name="lockedEmail" value="locked_out_user"/>
   <parameter name="pass" value="secret_sauce"/>
+=======
+>>>>>>> cd1d0dd9f92bbec285deb4a0e67ca25635d9a404
   <listeners>
     <listener class-name="testComponents.Listeners"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="WrongCredentialsErrorValidation(failed)">
+<<<<<<< HEAD
+=======
+    <parameter name="fooPass" value="fooPass"/>
+    <parameter name="fooEmail" value="fooEmail"/>
+    <parameter name="lockedEmail" value="locked_out_user"/>
+    <parameter name="pass" value="secret_sauce"/>
+>>>>>>> cd1d0dd9f92bbec285deb4a0e67ca25635d9a404
     <classes>
       <class name="tests.ErrorValidationTest">
         <methods>
