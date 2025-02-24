@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T15:15:49 EET" name="Suite" finished-at="2025-02-19T15:16:06 EET" duration-ms="16256">
+  <suite started-at="2025-02-24T16:49:37 EET" name="Suite" finished-at="2025-02-24T16:49:53 EET" duration-ms="15974">
     <groups>
       <group name="Purchase">
         <method signature="SubmitOrderTest.submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" name="submitMultipleOrders" class="tests.SubmitOrderTest"/>
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" name="submitOrder" class="tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-02-19T15:15:49 EET" name="Test" finished-at="2025-02-19T15:16:06 EET" duration-ms="16256">
+    <test started-at="2025-02-24T16:49:37 EET" name="Test" finished-at="2025-02-24T16:49:53 EET" duration-ms="15974">
       <class name="tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:49 EET" name="launchApplication" finished-at="2025-02-19T15:15:50 EET" duration-ms="1100" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:37 EET" name="launchApplication" finished-at="2025-02-24T16:49:38 EET" duration-ms="1263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:50 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:15:52 EET" duration-ms="1253" status="PASS">
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:38 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-24T16:49:39 EET" duration-ms="1228" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitMultipleOrders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:52 EET" name="tearDown" finished-at="2025-02-19T15:15:52 EET" duration-ms="594" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:39 EET" name="tearDown" finished-at="2025-02-24T16:49:40 EET" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:52 EET" name="launchApplication" finished-at="2025-02-19T15:15:53 EET" duration-ms="1099" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:40 EET" name="launchApplication" finished-at="2025-02-24T16:49:41 EET" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:53 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:15:55 EET" duration-ms="1292" status="PASS">
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:41 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-24T16:49:42 EET" duration-ms="1211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,15 +45,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitMultipleOrders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:55 EET" name="tearDown" finished-at="2025-02-19T15:15:55 EET" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:42 EET" name="tearDown" finished-at="2025-02-24T16:49:43 EET" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:55 EET" name="launchApplication" finished-at="2025-02-19T15:15:56 EET" duration-ms="1147" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:43 EET" name="launchApplication" finished-at="2025-02-24T16:49:44 EET" duration-ms="1127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:56 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-19T15:15:58 EET" duration-ms="1234" status="PASS">
+        <test-method signature="submitMultipleOrders(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:44 EET" name="submitMultipleOrders" data-provider="getData" finished-at="2025-02-24T16:49:45 EET" duration-ms="1188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +64,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitMultipleOrders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:58 EET" name="tearDown" finished-at="2025-02-19T15:15:58 EET" duration-ms="589" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:45 EET" name="tearDown" finished-at="2025-02-24T16:49:45 EET" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:58 EET" name="launchApplication" finished-at="2025-02-19T15:15:59 EET" duration-ms="1132" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:45 EET" name="launchApplication" finished-at="2025-02-24T16:49:47 EET" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:15:59 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:16:00 EET" duration-ms="766" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:47 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-24T16:49:47 EET" duration-ms="730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,15 +83,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:00 EET" name="tearDown" finished-at="2025-02-19T15:16:01 EET" duration-ms="597" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:47 EET" name="tearDown" finished-at="2025-02-24T16:49:48 EET" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:01 EET" name="launchApplication" finished-at="2025-02-19T15:16:02 EET" duration-ms="1083" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:48 EET" name="launchApplication" finished-at="2025-02-24T16:49:49 EET" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:02 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:16:03 EET" duration-ms="770" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:49 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-24T16:49:50 EET" duration-ms="748" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,15 +102,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:03 EET" name="tearDown" finished-at="2025-02-19T15:16:03 EET" duration-ms="596" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:50 EET" name="tearDown" finished-at="2025-02-24T16:49:50 EET" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:03 EET" name="launchApplication" finished-at="2025-02-19T15:16:04 EET" duration-ms="1047" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:50 EET" name="launchApplication" finished-at="2025-02-24T16:49:51 EET" duration-ms="999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:04 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-19T15:16:05 EET" duration-ms="755" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:51 EET" name="submitOrder" data-provider="getData" finished-at="2025-02-24T16:49:52 EET" duration-ms="730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,14 +121,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-19T15:16:05 EET" name="tearDown" finished-at="2025-02-19T15:16:06 EET" duration-ms="588" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@6ea2bc93]" started-at="2025-02-24T16:49:52 EET" name="tearDown" finished-at="2025-02-24T16:49:53 EET" duration-ms="587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SubmitOrderTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2025-02-19T15:15:36 EET" name="ErrorValidationSuite" finished-at="2025-02-19T15:15:49 EET" duration-ms="12923">
+  <suite started-at="2025-02-24T16:49:23 EET" name="ErrorValidationSuite" finished-at="2025-02-24T16:49:36 EET" duration-ms="13426">
     <groups>
       <group name="ErrorHandling">
         <method signature="ErrorValidationTest.fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" name="fillWrongCheckoutPageInfo" class="tests.ErrorValidationTest"/>
@@ -137,13 +137,13 @@
         <method signature="ErrorValidationTest.takeScreenShotOfFailedTest()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" name="takeScreenShotOfFailedTest" class="tests.ErrorValidationTest"/>
       </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-02-19T15:15:36 EET" name="WrongCredentialsErrorValidation" finished-at="2025-02-19T15:15:49 EET" duration-ms="12923">
+    <test started-at="2025-02-24T16:49:23 EET" name="WrongCredentialsErrorValidation" finished-at="2025-02-24T16:49:36 EET" duration-ms="13426">
       <class name="tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:36 EET" name="launchApplication" finished-at="2025-02-19T15:15:38 EET" duration-ms="1602" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:23 EET" name="launchApplication" finished-at="2025-02-24T16:49:26 EET" duration-ms="2359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:38 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:15:38 EET" duration-ms="531" status="PASS">
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:26 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-24T16:49:26 EET" duration-ms="559" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,15 +154,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillWrongCheckoutPageInfo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:38 EET" name="tearDown" finished-at="2025-02-19T15:15:39 EET" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:26 EET" name="tearDown" finished-at="2025-02-24T16:49:27 EET" duration-ms="597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:39 EET" name="launchApplication" finished-at="2025-02-19T15:15:40 EET" duration-ms="1132" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:27 EET" name="launchApplication" finished-at="2025-02-24T16:49:28 EET" duration-ms="1099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:40 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:15:41 EET" duration-ms="521" status="PASS">
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:28 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-24T16:49:28 EET" duration-ms="512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,15 +173,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillWrongCheckoutPageInfo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:41 EET" name="tearDown" finished-at="2025-02-19T15:15:41 EET" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:28 EET" name="tearDown" finished-at="2025-02-24T16:49:29 EET" duration-ms="594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:41 EET" name="launchApplication" finished-at="2025-02-19T15:15:42 EET" duration-ms="1108" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:29 EET" name="launchApplication" finished-at="2025-02-24T16:49:30 EET" duration-ms="1019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:42 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-19T15:15:43 EET" duration-ms="531" status="PASS">
+        <test-method signature="fillWrongCheckoutPageInfo(java.util.HashMap)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:30 EET" name="fillWrongCheckoutPageInfo" data-provider="getData" finished-at="2025-02-24T16:49:30 EET" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,15 +192,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillWrongCheckoutPageInfo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:43 EET" name="tearDown" finished-at="2025-02-19T15:15:43 EET" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:30 EET" name="tearDown" finished-at="2025-02-24T16:49:31 EET" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:43 EET" name="launchApplication" finished-at="2025-02-19T15:15:45 EET" duration-ms="1067" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:31 EET" name="launchApplication" finished-at="2025-02-24T16:49:32 EET" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginLockedUser(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:45 EET" name="loginLockedUser" finished-at="2025-02-19T15:15:45 EET" duration-ms="205" status="PASS">
+        <test-method signature="loginLockedUser(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:32 EET" name="loginLockedUser" finished-at="2025-02-24T16:49:32 EET" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,15 +216,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLockedUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:45 EET" name="tearDown" finished-at="2025-02-19T15:15:45 EET" duration-ms="589" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:32 EET" name="tearDown" finished-at="2025-02-24T16:49:33 EET" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:45 EET" name="launchApplication" finished-at="2025-02-19T15:15:46 EET" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:33 EET" name="launchApplication" finished-at="2025-02-24T16:49:34 EET" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginWrongCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:46 EET" name="loginWrongCredentials" finished-at="2025-02-19T15:15:47 EET" duration-ms="198" status="PASS">
+        <test-method signature="loginWrongCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:34 EET" name="loginWrongCredentials" finished-at="2025-02-24T16:49:34 EET" duration-ms="189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,15 +240,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWrongCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:47 EET" name="tearDown" finished-at="2025-02-19T15:15:47 EET" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:34 EET" name="tearDown" finished-at="2025-02-24T16:49:35 EET" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:47 EET" name="launchApplication" finished-at="2025-02-19T15:15:48 EET" duration-ms="1121" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:35 EET" name="launchApplication" finished-at="2025-02-24T16:49:36 EET" duration-ms="1089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="takeScreenShotOfFailedTest()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:48 EET" name="takeScreenShotOfFailedTest" finished-at="2025-02-19T15:15:48 EET" duration-ms="1" status="FAIL">
+        <test-method signature="takeScreenShotOfFailedTest()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:36 EET" name="takeScreenShotOfFailedTest" finished-at="2025-02-24T16:49:36 EET" duration-ms="1" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Intentionally failing this test to showcase screenshot feature.]]>
@@ -283,14 +283,14 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOfFailedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-19T15:15:48 EET" name="tearDown" finished-at="2025-02-19T15:15:49 EET" duration-ms="596" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ErrorValidationTest@54e041a4]" started-at="2025-02-24T16:49:36 EET" name="tearDown" finished-at="2025-02-24T16:49:36 EET" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ErrorValidationTest -->
     </test> <!-- WrongCredentialsErrorValidation -->
   </suite> <!-- ErrorValidationSuite -->
-  <suite started-at="2025-02-19T15:16:06 EET" name="MasterSuite" finished-at="2025-02-19T15:16:06 EET" duration-ms="0">
+  <suite started-at="2025-02-24T16:49:53 EET" name="MasterSuite" finished-at="2025-02-24T16:49:53 EET" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- MasterSuite -->
