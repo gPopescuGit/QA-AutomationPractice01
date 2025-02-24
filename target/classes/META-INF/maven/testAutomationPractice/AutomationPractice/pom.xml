@@ -60,7 +60,7 @@
         <version>3.0.0-M6</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
+            <suiteXmlFile>testSuites/Master-suite.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
