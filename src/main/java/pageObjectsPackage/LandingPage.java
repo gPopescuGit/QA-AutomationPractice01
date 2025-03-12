@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import abstractComponentPackage.AbstractComponent;
 
+//Login page
 public class LandingPage extends AbstractComponent {
 
 	public WebDriver driver;

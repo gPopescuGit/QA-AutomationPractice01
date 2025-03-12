@@ -54,6 +54,13 @@ public class SubmitOrderTest extends BaseTest {
 		overviewPage.finishOverview().confirmOrder();
 
 	}
+	
+	@Test(dataProvider = "getData")
+	public void testBrokenLinks(HashMap<String, String> input) throws Exception {
+		InventoryPage inventoryPageObject = landingPage.loginApplication(input.get("email"), input.get("pass"));
+		inventoryPageObject.checkBrokenLinks();
+		
+	}
 
 	@DataProvider
 	public Object[][] getData() throws IOException {

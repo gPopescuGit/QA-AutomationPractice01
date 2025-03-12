@@ -27,6 +27,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, "Test Passed");
+		driver.close();
 		  }
 	
 	@Override

@@ -49,11 +49,11 @@ public class BaseTest {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	public void launchApplication() throws IOException {
+	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
 		landingPage = new LandingPage(driver);
 		landingPage.goTo();
-//		return landingPage;
+		return landingPage;
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -74,13 +74,7 @@ public class BaseTest {
 		return data;
 	}
 
-//	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
-//		TakesScreenshot ts = (TakesScreenshot) driver;
-//		File screenshotAs = ts.getScreenshotAs(OutputType.FILE);
-//		File filePath = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
-//		FileUtils.copyFile(screenshotAs, filePath);
-//		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-//	}
+
 
 	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
@@ -90,6 +84,10 @@ public class BaseTest {
 
 		FileUtils.copyFile(screenshotAs, destination);
 		return filePath; // Return the file path
+	}
+	
+	public void manualTearDown() {
+		driver.close();
 	}
 
 }
