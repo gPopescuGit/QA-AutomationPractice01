@@ -7,7 +7,10 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
@@ -168,31 +171,145 @@ public class InventoryPage extends AbstractComponent {
 	@FindBy(xpath = "//ul[@class='social']//li//a")
 	List<WebElement>socialLinks;
 
-	public void softCheckHyperlink(WebElement e) throws Exception {
-			SoftAssert a = new SoftAssert();
+	public boolean softCheckHyperlink(WebElement e) throws Exception {
+		boolean linkInWorkingCondition = true;
 			String url = e.getDomAttribute("href");
 			if (url != null && !url.isEmpty() && (url.startsWith("http://") || url.startsWith("https://"))) {
 				URI uri = new URI(url);
 			    HttpURLConnection con = (HttpURLConnection) uri.toURL().openConnection();
-
 			    con.setRequestMethod("HEAD");
 			    int responseCode = con.getResponseCode();
-			    System.out.println("URL: " + url + " | Status Code: " + responseCode);
-				a.assertTrue(responseCode<400, "Link with Text: "+e.getText()+" with code "+responseCode);
+			    if(responseCode>400) {
+			    	 System.out.println("URL: " + url + " | Status Code: " + responseCode);
+			    	 linkInWorkingCondition = false;
+			    }
 			}
-
+			return linkInWorkingCondition;
 	}
+	
+	public boolean softCheckSocialHyperlinks() throws Exception {
+		boolean allLinksInWorkingCondition = true;
+		for (WebElement e : socialLinks) {
+			if(!softCheckHyperlink(e)) {
+				allLinksInWorkingCondition = false;
+			}
+		}
+		return allLinksInWorkingCondition;
+	}
+	
+	@FindBy(css="title")
+	WebElement pageTitle;
 
-	public void pressOnHyperlink() {
+	public List<String> pressOnSocialHyperlinks() throws InterruptedException {
+		List <String> websiteTitles = new ArrayList <String>();
 		for (WebElement e : socialLinks) {
 			e.click();
+			Thread.sleep(100);
 		}
+		Thread.sleep(2000);
+		Set<String> windows = driver.getWindowHandles(); 
+		Iterator<String> it = windows.iterator();
+		String parentId = it.next();
+
+		while(it.hasNext()) {
+			String childId = it.next();			
+			driver.switchTo().window(childId);
+			websiteTitles.add(extractPlatformName(driver.getTitle()));
+		}
+		driver.switchTo().window(parentId);
+		return websiteTitles;
+	}
+	
+	private String extractPlatformName(String name) {
+        String[] parts = name.split("[/|]");
+        return parts[parts.length - 1].trim();
+	}
+	
+	public boolean correspondingPageOpened(List<String> webPages) {
+	    for (String page : webPages) {
+	        boolean pageFound = false; 
+	        for (WebElement e : socialLinks) {
+	            String lowerHref = e.getDomAttribute("href").toLowerCase();
+	            String lowerPage = page.toLowerCase();
+	            if("x".equals(lowerPage) && lowerHref.contains("twitter")) {
+	            	pageFound = true;
+	                break;
+	            }
+	            if (lowerHref.contains(lowerPage) && !lowerPage.equals("X")) {
+	                pageFound = true;  
+	                break;  
+	            }      
+	        }
+	        if (!pageFound) {
+	            return false;
+	        }
+	    }
+	    return true;
 	}
 
-	public void softCheckSocialHyperlinks() throws Exception {
-		for (WebElement e : socialLinks) {
-			softCheckHyperlink(e);
+	@FindBy(id = "react-burger-menu-btn")
+	WebElement reactBurgerMenuBtn;
+	
+	public void iClickOnHamburgerButtonIcon() {
+		reactBurgerMenuBtn.click();
+	}
+
+	@FindBy(css = ".menu-item")
+	List<WebElement> menuItems;
+	
+	public boolean menuItemsDisplayed() throws InterruptedException {
+		//ensure menu options are visible
+		Thread.sleep(500);
+		boolean menuItemsDisplayed = true;
+		for (WebElement e : menuItems) {
+			System.out.println(e.getText());
+			if(!e.isDisplayed()) {
+				menuItemsDisplayed = false;
+			}
 		}
+		return menuItemsDisplayed;
+		
+	}
+
+	public void clickOnAboutBtn() {
+		driver.findElement(By.xpath("//a[contains(@id, \"about\")]")).click();
+	}
+	
+	public void clickOnLogoutBtn() {
+		driver.findElement(By.xpath("//a[contains(@id, \"logout\")]")).click();
+	}
+
+	public void clickOnResetBtn() {
+		driver.findElement(By.xpath("//a[contains(@id, \"reset\")]")).click();
+	}
+
+	public void addRandomProductToCart() {
+		// TODO random feature
+		driver.findElement(By.cssSelector("#add-to-cart-sauce-labs-bike-light")).click();
+	}
+
+	public boolean itemCanBeAddedToCart() {
+		// TODO Auto-generated method stub
+		List<WebElement> elements = driver.findElements(By.xpath("//button[contains(@id, 'bike-light') and contains(@id, 'add')]"));
+		return elements.size()>0;
+	}
+	//TODO: random feature
+	String productClicked = "Sauce Labs Backpack";
+	
+	public void clickonRandomProduct() {
+		//TODO: random feature
+		driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).click();
+	}
+
+	public boolean correspondingProductPageIsOpened() {
+		// TODO Auto-generated method stub
+		String openedProductPageTitle = driver.findElement(By.cssSelector(".inventory_details_name")).getText();
+		return openedProductPageTitle.equals(productClicked);
+	}
+
+	public boolean inventoryPageOpen() {
+		return driver.findElement(By.cssSelector("title")).getText().equals("Products");
+		
 	}
 	
 	

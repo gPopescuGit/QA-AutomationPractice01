@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/java/CucumberTests", glue="CucumberTestStepDefinition"
-,monochrome=true, tags="@Inventory", plugin= {"html:target/cucumber.html"})
+,monochrome=true, tags="@Checkout", plugin= {"html:target/cucumber.html"})
 /*
  * run all feature files present in cucumber package
  * map the using stepDefinitions
