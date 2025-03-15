@@ -28,13 +28,18 @@ public class OverviewPage extends AbstractComponent{
 	@FindBy(id="finish")
 	WebElement finishBtn;
 	
-	public boolean checkTotalValueWithoutTax() {
-		int sum = 0;
+	@FindBy(id="cancel")
+	WebElement cancelBtn;
+	
+	public boolean totalValueWithoutTaxMatchesSumOfProductPrices() {
+		double sum = 0;
 		for (WebElement ele : cartItemsPrices) {
 			double itemValue = Double.valueOf(ele.getText().split("\\$")[1]);
 			sum+=itemValue;
 		}
 		double totalValue = Double.valueOf(totalWithoutTax.getText().split("\\$")[1]);		
+		System.out.println(sum);
+		System.out.println(totalValue);
 		return sum==totalValue;
 	}
 	
@@ -42,5 +47,29 @@ public class OverviewPage extends AbstractComponent{
 		finishBtn.click();
 		ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 		return confirmationPage;
+	}
+	
+	@FindBy(css = ".inventory_item_name")
+	List<WebElement> productsOnOverviewPage;
+	
+	public int productsVisibleInOverviewPage() {
+		return productsOnOverviewPage.size();
+	}
+
+	public void iClickOnButtonFromOverviewPage(String button) {
+		switch (button) {
+		case "Finish": {
+			finishBtn.click();
+			break;
+		}
+		case "Cancel": {
+			cancelBtn.click();
+			break;
+		}
+
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + button);
+		}
+		
 	}
 }

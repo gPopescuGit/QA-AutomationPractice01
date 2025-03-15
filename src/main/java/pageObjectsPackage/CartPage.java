@@ -79,5 +79,22 @@ public class CartPage extends AbstractComponent{
 		return driver.findElement(By.cssSelector("title")).getText().equals("Your Cart");
 	}
 	
+
+	public void iClickOnButtonFromCartPage(String button) {
+		switch (button) {
+		case "Checkout": {
+			checkoutBtn.click();
+			break;
+		}
+		case "Continue Shopping": {
+			continueShoppingBtn.click();
+			break;
+		}
+
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + button);
+		}
+	}
+	
 	
 }

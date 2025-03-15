@@ -3,17 +3,25 @@ package testComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -27,7 +35,6 @@ public class BaseTest {
 	// initialize driver
 	public WebDriver driver;
 	public LandingPage landingPage;
-
 	// create landing page
 	public WebDriver initializeDriver() throws IOException {
 		Properties properties = new Properties();
@@ -74,8 +81,6 @@ public class BaseTest {
 		return data;
 	}
 
-
-
 	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File screenshotAs = ts.getScreenshotAs(OutputType.FILE);
@@ -85,9 +90,38 @@ public class BaseTest {
 		FileUtils.copyFile(screenshotAs, destination);
 		return filePath; // Return the file path
 	}
-	
+
 	public void manualTearDown() {
 		driver.close();
 	}
+
+	public boolean expected_opened_webpage(String pageName) {
+		switch (pageName) {
+		case "login": {
+			return driver.findElements(By.cssSelector("#login-button")).size()>0;
+		}
+		case "inventory": {
+			return driver.findElements(By.cssSelector("#inventory_container")).size()>0;
+		}
+		case "cart": {
+			return driver.findElements(By.cssSelector("#cart_contents_container")).size()>0;
+		}
+		case "product": {
+			return driver.findElements(By.cssSelector("#inventory_item_container")).size()>0;
+		}
+		case "checkout": {
+			return driver.findElements(By.cssSelector("#checkout_info_container")).size()>0;
+		}
+		case "overview": {
+			return driver.findElements(By.cssSelector("#checkout_summary_container")).size()>0;
+		}
+		case "confirmation": {
+			return driver.findElements(By.cssSelector("#checkout_complete_container")).size()>0;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + pageName);
+		}
+	}
+
 
 }

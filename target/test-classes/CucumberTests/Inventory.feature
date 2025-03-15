@@ -10,7 +10,7 @@ Feature: Inventory Page
   #Scenario: Add product to cart
     #When I add a new product to cart
     #Then Cart icon indicates correct number of products in the cart
-#
+
   #@Inventory
   #Scenario: Remove product from cart
     #When I remove one existing product from cart
@@ -34,7 +34,6 @@ Feature: Inventory Page
     #When I click on social hyperlink
     #Then Corresponding page is opened
     #
-    
     #fail: twitter response over 400
 #	@Inventory
   #Scenario: Links displayed on page are in working condition
@@ -42,34 +41,34 @@ Feature: Inventory Page
     #
   #@Inventory
   #Scenario: Menu options are displayed
-  #	Given I click on hamburger button icon
-    #Then Options menu bar is displayed
-    
+  #	Given I click on hamburger button from Inventory page
+    #Then Options menu bar is displayed on Inventory page
+    #
      #@Inventory
   #Scenario: User clicks on 'About' button
-  #	Given I click on hamburger button icon
-    #When I click on "About" button 
-    #Then Webpage "saucelabs.com" is opened
-  
+  #	Given I click on hamburger button from Inventory page
+    #When I click on "About" button from Inventory page
+    #Then I have landed on webpage "saucelabs.com"
+  #
     #@Inventory
   #Scenario: User clicks on 'Log out' button
-  #	Given I click on hamburger button icon
-    #When I click on "Logout" button 
-    #Then Login page is opened
-    
-
+  #	Given I click on hamburger button from Inventory page
+    #When I click on "Logout" button from Inventory page
+    #Then I logged out and Login page is opened
+    #
+#
     @Inventory
   Scenario: User clicks on 'Reset App State' button
-  	Given I click on hamburger button icon
+  	Given I click on hamburger button from Inventory page
   	And At least one product is added to cart
-    When I click on "Reset App State" button
-    Then Cart indicates no items added
+    When I click on "Reset App State" button from Inventory page
+    Then Cart icon from Inventory page indicates no items added
     And Items including previously added ones can be added to cart
     
-      #@Inventory
-  #Scenario: View product details
-  #	When I click on product title
-    #Then Corresponding product page is opened
+      @Inventory
+  Scenario: View product details
+  	When I click on product title
+    Then Corresponding product page is opened
   
   
     

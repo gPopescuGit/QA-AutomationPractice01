@@ -35,22 +35,21 @@ public class LoginStepDefinitionImplementation extends BaseTest {
     	}
     }
 	
-	@Then("Inventory page is opened")
-	public void inventory_page_is_opened() {
-		Assert.assertEquals(driver.findElement(By.cssSelector(".title")).getText(), "Products");	
-		driver.close();
+	@Then("I logged in and landed on Inventory Page")
+	public void i_logged_in_and_landed_on_inventory_page() {
+		Assert.assertTrue(expected_opened_webpage("inventory"));
 	}
 	
 
-	@Then ("Error message {string} is displayed")
-	public void error_message_is_displayed(String string) {
-		Assert.assertEquals(driver.findElement(By.xpath("//h3[@data-test='error']")).getText(), string);
+	@Then ("Error message {string} is displayed on Login page")
+	public void error_message_is_displayed_on_login_page(String errorMsg) {
+		Assert.assertEquals(landingPage.getErrorMessage(), errorMsg);
 	}
 	
 	@And ("Login Failed")
 	public void login_Failed() {
-		Assert.assertEquals(driver.findElement(By.cssSelector(".login_logo")).getText(), "Swag Labs");	
-		driver.close();
+		//login page is the expected page on failed log in attempt
+		expected_opened_webpage("login");
 	}
 	
 

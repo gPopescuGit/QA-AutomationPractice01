@@ -30,7 +30,7 @@ public class CheckoutStepDefinitionImplementation extends BaseTest {
 		checkOutPage = cartPage.goToCheckout();
 	}
 	
-	@Given("I filled the {string} field")
+	@Given("I filled the {string} field on Checkout page")
 	public void i_filled_the_field(String string) {
 		switch (string) {
 		case "First Name": {
@@ -50,22 +50,28 @@ public class CheckoutStepDefinitionImplementation extends BaseTest {
 		}
 	}
 	
-	@When("I click on Continue button")
-	public void checkout_i_click_on_continue_button() {
-		checkOutPage.clickOnContinue();
+	@When("I click on {string} button on Checkout page")
+	public void i_click_on_button_on_checkout_page(String button) {
+		checkOutPage.iClickOnButtonFromCheckoutPage(button);
 	}
 
-	@Then("Overview page is open")
-	public void checkout_overview_page_is_open() {
-		//TODO: refactor in Abstract component or base test a method to return title of current page
+
+	@Then("I am taken to Overview page")
+	public void i_am_taken_to_overview_page() {
+		Assert.assertTrue(expected_opened_webpage("overview"));
 	}
 
-	@Then("Overview page is NOT open")
-	public void checkout_overview_page_is_NOT_open() {
-		//TODO: refactor in Abstract component or base test a method to return title of current page
+	@Then("I am still on Checkout page")
+	public void i_am_still_on_checkout_page() {
+		Assert.assertTrue(expected_opened_webpage("checkout"));
 	}
 	
-	@And("Error message {string} is displayed")
+	@Then("I am taken back to Cart page")
+	public void i_am_taken_back_to_cart_page() {
+		Assert.assertTrue(expected_opened_webpage("cart"));
+	}
+	
+	@And("Error message {string} is displayed on Checkout page")
 	public void error_message_is_displayed(String string) {
 		String errorMessageDisplayed = checkOutPage.errorMessageDisplayed();
 		Assert.assertEquals(errorMessageDisplayed, string);

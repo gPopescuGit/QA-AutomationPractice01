@@ -180,7 +180,7 @@ public class InventoryPage extends AbstractComponent {
 			    con.setRequestMethod("HEAD");
 			    int responseCode = con.getResponseCode();
 			    if(responseCode>400) {
-			    	 System.out.println("URL: " + url + " | Status Code: " + responseCode);
+			    	 System.out.println("FAILED CHECK | URL: " + url + " | Status Code: " + responseCode);
 			    	 linkInWorkingCondition = false;
 			    }
 			}
@@ -225,7 +225,7 @@ public class InventoryPage extends AbstractComponent {
         return parts[parts.length - 1].trim();
 	}
 	
-	public boolean correspondingPageOpened(List<String> webPages) {
+	public boolean expectedPageOpened(List<String> webPages) {
 	    for (String page : webPages) {
 	        boolean pageFound = false; 
 	        for (WebElement e : socialLinks) {
@@ -248,10 +248,38 @@ public class InventoryPage extends AbstractComponent {
 	}
 
 	@FindBy(id = "react-burger-menu-btn")
-	WebElement reactBurgerMenuBtn;
+	WebElement hamburgerMenuBtn;
 	
-	public void iClickOnHamburgerButtonIcon() {
-		reactBurgerMenuBtn.click();
+	@FindBy(xpath = "//a[contains(@id, \"about\")]")
+	WebElement sidebarAboutBtn;
+	
+	@FindBy(xpath = "//a[contains(@id, \"logout\")]")
+	WebElement sidebarLogoutBtn;
+	
+	@FindBy(xpath = "//a[contains(@id, \"reset\")]")
+	WebElement sidebarResetBtn;
+	
+	public void iClickOnButtonFromInventoryPage(String button) {
+		switch (button) {
+		case "hamburger": {
+			hamburgerMenuBtn.click();
+			break;
+		}
+		case "About": {
+			sidebarAboutBtn.click();
+			break;
+		}
+		case "Logout": {
+			sidebarLogoutBtn.click();
+			break;
+		}
+		case "Reset App State": {
+			sidebarResetBtn.click();
+			break;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + button);
+		}
 	}
 
 	@FindBy(css = ".menu-item")
@@ -271,24 +299,13 @@ public class InventoryPage extends AbstractComponent {
 		
 	}
 
-	public void clickOnAboutBtn() {
-		driver.findElement(By.xpath("//a[contains(@id, \"about\")]")).click();
-	}
-	
-	public void clickOnLogoutBtn() {
-		driver.findElement(By.xpath("//a[contains(@id, \"logout\")]")).click();
-	}
-
-	public void clickOnResetBtn() {
-		driver.findElement(By.xpath("//a[contains(@id, \"reset\")]")).click();
-	}
 
 	public void addRandomProductToCart() {
 		// TODO random feature
 		driver.findElement(By.cssSelector("#add-to-cart-sauce-labs-bike-light")).click();
 	}
 
-	public boolean itemCanBeAddedToCart() {
+	public boolean itemCanBeAddedToCartAfterReset() {
 		// TODO Auto-generated method stub
 		List<WebElement> elements = driver.findElements(By.xpath("//button[contains(@id, 'bike-light') and contains(@id, 'add')]"));
 		return elements.size()>0;

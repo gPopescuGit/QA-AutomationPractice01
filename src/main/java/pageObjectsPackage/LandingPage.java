@@ -1,5 +1,6 @@
 package pageObjectsPackage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,4 +40,10 @@ public class LandingPage extends AbstractComponent {
 		driver.get("https://www.saucedemo.com/");// waits to fully load page
 	}
 	
+	@FindBy(xpath = "//h3[@data-test='error']")
+	WebElement errorMessageContainer;
+	
+	public String getErrorMessage() {
+		return errorMessageContainer.getText();
+	}
 }

@@ -44,44 +44,41 @@ public class CartStepDefinitionImplementation extends BaseTest {
 		Assert.assertTrue(itemsInCart.contains(addedProductInCart));
 	}
 	
-	@When("I click on selected product \"Remove\" button")
-	public void i_click_on_product_remove_button() {
+	@When("I remove one product from cart")
+	public void i_remove_one_product_from_cart() {
 		cartPage.removeProductFromCart(addedProductInCart);
 	}
 	
-	@Then("Product is removed from Cart")
-	public void product_removed_from_cart() {
+	@Then("Removed product is no longer in Cart")
+	public void removed_product_is_no_longer_in_cart() {
 		Assert.assertTrue(cartPage.productIsNotInCart(addedProductInCart));
 	}
 	
-	@When("I click on \"Checkout\" button")
-	public void i_click_on_checkout_button() {
-		cartPage.goToCheckout();
+	@When("I click on {string} button from Cart page")
+	public void i_click_on_checkout_button(String string) {
+		cartPage.iClickOnButtonFromCartPage(string);
 	}
 	
-	@When("I click on \"Continue Shopping\"")
-	public void i_click_on_continue_shopping() {
-		cartPage.continueShopping();
+	
+	@Then("I am taken back to Inventory page")
+	public void i_am_taken_back_to_inventory_page() {
+		Assert.assertTrue(expected_opened_webpage("inventory"));
 	}
 	
-	@Then("Inventory page is open")
-	public void inventory_page_open() {
-		inventoryPage.inventoryPageOpen();
-	}
-	
-	@Then("I am notified that Cart is empty")
-	public void i_am_notified_that_cart_is_empty(){
+	@Then("I am notified the Cart is empty and cannot proceed to checkout")
+	public void i_am_notified_the_cart_is_empty_and_cannot_proceed_to_checkout(){
 		//there is no notification implemented in webpage
-		Assert.assertTrue(false, "Cart is empty, cannot proceed to checkout");
+		String expectedErrorMessage = "no message";
+		Assert.assertEquals(expectedErrorMessage, "Cart is empty, cannot proceed to checkout");
 	}
 	
-	@And("Cart page is still open")
+	@And("I am still in cart page")
 	public void cart_page_is_still_open() {
-		Assert.assertTrue(cartPage.cartPageOpen());
+		Assert.assertTrue(expected_opened_webpage("cart"));
 	}
 	
-	@Then("Checkout page is opened")
+	@Then("I proceed to checkout")
 	public void checkout_page_is_open() {
-		Assert.assertTrue(checkOutPage.checkoutPageOpen());
+		Assert.assertTrue(expected_opened_webpage("checkout"));
 	}
 }

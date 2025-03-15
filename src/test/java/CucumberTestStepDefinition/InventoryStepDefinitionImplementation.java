@@ -71,56 +71,37 @@ public class InventoryStepDefinitionImplementation extends BaseTest {
 
 	@Then("Corresponding page is opened")
 	public void corresponding_page_is_opened() {
-		Assert.assertTrue(inventoryPage.correspondingPageOpened(openedWebsites));
+		Assert.assertTrue(inventoryPage.expectedPageOpened(openedWebsites));
 	}
 
 	@Then("Soft check on hyperlinks indicates response code value under 400")
 	public void soft_check_indicates_response_value_under_400() throws Exception {
 		Assert.assertTrue(inventoryPage.softCheckSocialHyperlinks());
 	}
-
-	@Given("I click on hamburger button icon")
-	public void given_I_click_on_hamburger_button_icon() {
-		inventoryPage.iClickOnHamburgerButtonIcon();
+	
+	@Given("I click on hamburger button from Inventory page")
+	public void given_I_click_on_hamburger_button_from_inventory_page() {
+		inventoryPage.iClickOnButtonFromInventoryPage("hamburger");
 	}
 
-	@Then("Options menu bar is displayed")
-	public void options_menu_bar_is_displayed() throws InterruptedException {
+	@When("I click on {string} button from Inventory page")
+	public void given_I_click_on_button_from_inventory_page(String button) {
+		inventoryPage.iClickOnButtonFromInventoryPage(button);
+	}
+
+	@Then("Options menu bar is displayed on Inventory page")
+	public void options_menu_bar_is_displayed_on_inventory_page() throws InterruptedException {
 		Assert.assertTrue(inventoryPage.menuItemsDisplayed());
-	}
-
-	@When("I click on {string} button")
-	public void i_click_on_button(String string) {
-		switch (string) {
-		case "About": {
-			inventoryPage.clickOnAboutBtn();
-			break;
-		}
-		case "Logout": {
-			inventoryPage.clickOnLogoutBtn();
-			break;
-		}
-		case "Reset App State": {
-			inventoryPage.clickOnResetBtn();
-			break;
-		}
-		default:
-			throw new IllegalArgumentException("Unexpected value: " + string);
-		}
+	}	
+	
+	@Then("I have landed on webpage {string}")
+	public void i_have_landed_on_webpage(String string) {
+		Assert.assertTrue(driver.getPageSource().contains(string));
 	}
 	
-	
-	@Then("Webpage {string} is opened")
-	public boolean webpage_is_opened(String string) {
-	    return driver.getPageSource().contains(string);
-	}
-	
-	@Then("Login page is opened")
-	public boolean login_page_is_opened() {
-		if(driver.findElement(By.id("login-button")).isDisplayed()) {
-			return true;
-		}
-		return false;
+	@Then("I logged out and Login page is opened")
+	public void i_logged_out_and_login_page_is_opened() {
+		Assert.assertTrue(expected_opened_webpage("login"));
 	}
 	
 	@And("At least one product is added to cart")
@@ -128,18 +109,16 @@ public class InventoryStepDefinitionImplementation extends BaseTest {
 		inventoryPage.addRandomProductToCart();
 	}
 	
-	@Then("Cart indicates no items added")
-	public void cart_indicates_no_items_added() {
+	@Then("Cart icon from Inventory page indicates no items added")
+	public void cart_icon_from_inventory_page_indicates_no_items_added() {
 		Assert.assertEquals(
 				String.valueOf(driver.findElements(By.cssSelector(".shopping_cart_badge")).size())
 				, "0");
 	}
-	
-//	Assert.assertEquals(inventoryPage.howManyProductsInCart(), String.valueOf(expectedProductsInCart));
-	
+		
 	@And ("Items including previously added ones can be added to cart")
 	public void items_can_be_added_to_cart() {
-		Assert.assertTrue(inventoryPage.itemCanBeAddedToCart());
+		Assert.assertTrue(inventoryPage.itemCanBeAddedToCartAfterReset());
 	}
 	
 	@When("I click on product title")

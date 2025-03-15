@@ -27,7 +27,7 @@ public class SubmitOrderTest extends BaseTest {
 				input.get("fName"), //
 				input.get("lName"), //
 				input.get("postalCode"));
-		overviewPage.checkTotalValueWithoutTax();
+		overviewPage.totalValueWithoutTaxMatchesSumOfProductPrices();
 		overviewPage.finishOverview().confirmOrder();
 
 	}
@@ -50,7 +50,7 @@ public class SubmitOrderTest extends BaseTest {
 				input.get("fName"), //
 				input.get("lName"), //
 				input.get("postalCode"));
-		overviewPage.checkTotalValueWithoutTax();
+		overviewPage.totalValueWithoutTaxMatchesSumOfProductPrices();
 		overviewPage.finishOverview().confirmOrder();
 
 	}

@@ -19,7 +19,21 @@ public class ConfirmationPage extends AbstractComponent{
 	@FindBy(css=".complete-header")
 	WebElement confirmationTxt;
 	
+	@FindBy(id = "back-to-products")
+	WebElement backToProductsBtn;
+	
 	public boolean confirmOrder() {
 		return confirmationTxt.getText().equals("Thank you for your order!");
+	}
+	
+	public void getBackToProducts(String button) {
+		switch (button) {
+		case "Back to Home": {
+			backToProductsBtn.click();
+			break;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + button);
+		}
 	}
 }
