@@ -9,3 +9,5 @@ cd repoLocation //set location to the downloaded files
 mvn test -DsuiteXmlFile=testSuites/Master-suite.xml //run Master-suite  
 start "reports/index.html" //view report in browser  
 ![FailedTest screenshot](reports/loginLockedUser.png)
+
+For more details, please check the Wiki pages
